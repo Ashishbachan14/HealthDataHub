@@ -1,0 +1,113 @@
+@keyframes animate-menu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animate-menu-items {
+  from {
+    transform: translateX(5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animate-faq-questions {
+  0% {
+    opacity: 0;
+    max-height: 0;
+  }
+  75% {
+    max-height: 30rem;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    max-height: 30rem;
+  }
+}
+
+@keyframes animate-banner-wave {
+  0% {
+    transform: translateY(0.1rem) scale(1.05, 1.25);
+  }
+  50% {
+    transform: translateY(0.1rem) scale(1.15, 1.15);
+  }
+  100% {
+    transform: translateY(0.1rem) scale(1.02, 1);
+  }
+}
+
+@keyframes animate-footer-wave {
+  0% {
+    transform: translateY(-0.2rem) scale(1.05, 1.25);
+  }
+  50% {
+    transform: translateY(-0.2rem) scale(1.15, 1.15);
+  }
+  100% {
+    transform: translateY(-0.2rem) scale(1.02, 1);
+  }
+}
+
+@keyframes animate-clouds {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-2rem, -0.1rem);
+  }
+}
+
+@keyframes show-to-top {
+  from {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes show-to-left {
+  from {
+    opacity: 0;
+    transform: translateX(5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes show-to-right {
+  from {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes show-to-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
