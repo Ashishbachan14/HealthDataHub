@@ -1,0 +1,137 @@
+<html>
+  <head>
+  <title>Patient Information Form</title>
+  <style>
+    
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #5353f0b9;
+  color: #444;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"]:active {
+  background-color: #367c39;
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  form {
+    width: 80%;
+  }
+}
+  </style>
+</head>
+<body>
+  <h2>Patient Information Form</h2>
+  <form>
+    <label for="name">Patient's Full Name:</label>
+    <input type="text" id="name" name="name" required=""><br><br>
+    
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br><br>
+    
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required=""><br><br>
+    
+    <label for="height">Height (in feet/inches or meters/centimeters):</label>
+    <input type="text" id="height" name="height" required=""><br><br>
+    
+    <label for="weight">Weight (in pounds or kilograms):</label>
+    <input type="text" id="weight" name="weight" required=""><br><br>
+    
+    <label for="bloodgroup">Blood Group:</label>
+    <input type="text" id="bloodgroup" name="bloodgroup" required=""><br><br>
+    
+    <label for="diabetes">Do you have diabetes?</label>
+    <input type="radio" id="yes" name="diabetes" value="Yes">
+    <label for="yes">Yes</label>
+    <input type="radio" id="no" name="diabetes" value="No">
+    <label for="no">No</label><br><br>
+    
+    <label for="hypertension">Do you have hypertension?</label>
+    <input type="radio" id="yes" name="hypertension" value="Yes">
+    <label for="yes">Yes</label>
+    <input type="radio" id="no" name="hypertension" value="No">
+    <label for="no">No</label><br><br>
+    
+    <label for="bp">Blood Pressure:</label>
+    <input type="text" id="bp" name="bp" required=""><br><br>
+    
+    <label for="hb">Hemoglobin (HB):</label>
+    <input type="text" id="hb" name="hb" required=""><br><br>
+    
+    <label for="plateletcount">Platelet Count:</label>
+    <input type="text" id="plateletcount" name="plateletcount" required=""><br><br>
+    
+    <label for="identificationmark">Identification Mark:</label>
+    <input type="text" id="identificationmark" name="identificationmark" required=""><br><br>
+    
+    <label for="premedicalhistory">Previous Medical History:</label><br>
+    <textarea id="premedicalhistory" name="premedicalhistory" rows="5" cols="50"></textarea><br><br>
+    
+    <input type="submit" value="Submit" >
+  </form>
+
+  <script src="dashboard.js"></script>
+
+
+</body></html>
